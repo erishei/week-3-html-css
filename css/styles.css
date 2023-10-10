@@ -1,103 +1,22 @@
-/* universal selector = asterisk(*) */
-* {
+h1 {
     color: red;
-    font-size: 28px;
 }
 
-/*h1 {*/
-/*    color: olivedrab;*/
-/*}*/
-
-/* pseudo-classes selector */
-a:hover {
-    background-color: yellow;
+#desktop-section {
+    display: none;
 }
 
-p {
-    color: blue;
+@media (min-width: 640px) {
+    #desktop-section {
+        display: block;
+    }
+    #mobile-section {
+        display: none;
+    }
 }
-
-/* class selector (.) */
-/* class can be used on multipe elements/tags */
-.highlight {
-    color: green;
+/*medium*/
+@media (min-width: 780px) {
+     h1 {
+         color: green;
+     }
 }
-
-/* (#) id selector */
-/* ID's are _not_ reusable */
-#header {
-    background-color: yellow;
-}
-
-/* descendant selector */
-article p {
-    color: hotpink;
-}
-
-/* this is only if you don't want both the same color */
-/*article h2 {*/
-/*    color: peru;*/
-/*}*/
-
-/* child selector (parent > child)
-   matches and element that is the direct child of a
-   specific element */
-ul > li {
-    list-style-type: square;
-}
-
-/* sibling selector, chooses the one closest after it */
-h2 + p {
-    background-color: aqua;
-}
-
-/* general sibling selector (not just the brother right after h2)
- obs! overrides the previous single-sibling-selector */
-h2 ~ p {
-    background-color: darkorchid;
-}
-
-input[type="text"] {
-    color: black;
-    font-size: 18px;
-    border-color: darkorchid;
-}
-
-input[type="submit"] {
-    background-color: mediumpurple;
-    color: #FFFFFF;
-    border-radius: 8px;
-    border-color: darkorchid;
-    text-transform: lowercase;
-}
-
-/* pseudo-classes selector */
-ul li:first-child {
-    background-color: darkorange;
-}
-
-ul li:last-child {
-    background-color: darkorange;
-}
-
-ul li:nth-child(2) {
-    background-color: lime;
-}
-
-/*p::before {*/
-/*    content: "123";*/
-/*}*/
-
-/*p::after {*/
-/*    content: "123";*/
-/*}*/
-
-/*Grouping selectors*/
-h1, p {
-    font-family: Georgia, Serif;
-}
-
-p.dummy::first-letter {
-    font-size: 48px;
-}
-
