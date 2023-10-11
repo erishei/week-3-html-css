@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+/*0,1,0,0 - #header , 0,0,1,0 - .header , 0,0,0,1 - h2*/
+/* Id, class, tag - Specificity/hierarchy*/
+
+      #header-id {
+        color: plum;
+      }
+
+      .header {
+        color: purple;
+      }
+
+      h2 {
+        color: cornflowerblue;
+      }
+      /* 0,0,1,1 - tag with class will still be under id*/
+      h2.header {
+          color: yellow;
+      }
+
+      /*h2.header {*/
+      /*    color: aqua !important;*/
+      /*}*/
+    /* !important ranks over ID 1,0,0,0
+        VERY BAD, never use */
+
+    #header-id span {
+        color: brown;
+    }
+    /*0,1,0,1*/
+
+    </style>
+</head>
+<body>
+
+<h2 id="header-id" class="header">
+<span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra sit amet aliquam id diam maecenas ultricies mi.
+</span>
+</h2>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+
+</body>
+</html>

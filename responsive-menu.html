@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+
+      * {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background: black;
+        position: sticky;
+        top: 0;
+        border-radius: 8px;
+        padding: 8px 16px;
+      }
+
+      nav {
+        display: none;
+        background: black;
+        border-radius: 8px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+
+      label {
+        font-size: 38px;
+      }
+
+      #menu-checkbox:checked ~ nav {
+        display: block;
+      }
+
+      #menu-checkbox {
+        display: none;
+      }
+
+      nav ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+      }
+
+      nav li {
+        padding: 8px 0;
+      }
+
+      /* Small (sm) */
+      @media (min-width: 640px) {
+        nav {
+          display: block;
+        }
+      }
+
+      /* Medium (md) */
+      @media (min-width: 768px) {
+        /* Your styles for the medium breakpoint here */
+
+        header {
+          padding: 0 8px;
+        }
+
+        header label {
+          display: none;
+        }
+
+        nav {
+          display: block;
+        }
+
+        nav li {
+          display: inline-block;
+        }
+
+        nav li a:hover {
+          text-decoration: underline;
+        }
+      }
+
+
+
+      /* Large (lg) */
+      @media (min-width: 1024px) {
+        /* Your styles for the large breakpoint here */
+      }
+
+      /* Extra Large (xl) */
+      @media (min-width: 1280px) {
+        /* Your styles for the extra large breakpoint here */
+      }
+
+      /* 2XL (2xl) */
+      @media (min-width: 1536px) {
+        /* Your styles for the 2XL breakpoint here */
+      }
+
+    </style>
+</head>
+
+<header>
+  <input type="checkbox" id="menu-checkbox"/>
+  <label for="menu-checkbox" id="menu-label">🍔</label>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Thomas er en bæsj</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aperiam eius error, et eum fugiat ipsum modi molestiae molestias, mollitia nam numquam optio porro reprehenderit tenetur unde vero vitae.
+  </p>
+
+</main>
+
+</html>

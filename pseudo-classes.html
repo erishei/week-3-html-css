@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button:hover {
+            background-color: red;
+        }
+
+        button:focus {
+            background-color: cornflowerblue;
+        }
+
+        #email:disabled {
+            background-color: brown;
+        }
+
+        #name:required {
+            background-color: plum;
+        }
+
+        li:nth-child(even) {
+            color: green;
+            background-color: yellow;
+        }
+
+        li:nth-child(odd) {
+            color: yellow;
+            background-color: green;
+        }
+
+        /* 2n = I want to select every second child
+            use either this or the (even) This one is called "formula" */
+        li:nth-child(2n) {
+            color: plum;
+            background-color: palegreen;
+        }
+        /*!* If you want to skip the first one: *!*/
+        /*li:nth-child(2n + 1) {*/
+        /*    color: red;*/
+        /*}*/
+    </style>
+</head>
+
+<body>
+<div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" disabled/>
+<!--    <input type="email" id="email" disabled   <-- disables a box />-->
+</div>
+<div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required/>
+</div>
+<button type="submit" class="submit">
+        Click me to send
+</button>
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>::Box Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" type="text/css" href="styles.css"/>  -->
+    <style>
+        /** {*/
+        /*    box-sizing: border-box;*/
+        /*}*/
+        .div-1 {
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+        /* padding inherits the background ie the background will expand with the padding */
+            margin: 20px;
+        /* if you don't want the same width on the margin all around, it
+           can be specified (margin-top/bottom, margin-right/left
+           or you write it Margin: 15px (top) 12px (right) 15px (bottom) 12px (left)
+           the same can be done with the padding (think clockwise)
+           if you only put to numbers ie padding: 15px 25 px, it will be top/bottom*/
+            border: 10px solid yellow;
+        /* border and padding will be calculated in the overall dimensions of an element.
+           margin will not. */
+            /*box-sizing: content-box;*/
+            box-sizing: border-box;
+        /*  Box sizing: border-box makes it so the numbers you put in are maximum. It won't scale.
+            Test out with to divs with same written dimensions, but one is
+            border-box and one is "box-sizing: content-box;". */
+        }
+        /* The highest margin number on one of two elements will be dominant, regardless of the order
+           it was written in.
+           So if Div-1 has a margin of 15 and Div-2 has a margin of Div-2 is 20,
+           The margin between the two elements _will be 20. They won't be added up */
+
+        .div-2 {
+            background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 10px solid pink;
+            box-sizing: content-box;
+        }
+    /*    Notice the _only diff between Div-1 and Div-2 is the box-sizing */
+    </style>
+</head>
+
+<body>
+<div class="div-1">
+           one
+</div>
+<div class="div-2">
+           two
+</div>
+</body>
+
+</html>
